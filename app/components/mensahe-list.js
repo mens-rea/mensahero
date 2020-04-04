@@ -24,5 +24,10 @@ export default Component.extend({
     }
 
     return 0;
-  })
+  }),
+  actions: {
+    upvote() {
+      alert("still working on the upvote functionality... chill ka leng...");
+    }
+  }
 });
