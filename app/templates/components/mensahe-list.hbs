@@ -1,0 +1,7 @@
+<div class='feed'>
+  {{#each sortedMensaheList as |mensahe|}}
+    <div class='feed-item'>{{mensahe.body}}</div>
+  {{/each}}
+</div>
+
+{{yield}}
