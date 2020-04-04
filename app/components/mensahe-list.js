@@ -26,8 +26,11 @@ export default Component.extend({
     return 0;
   }),
   actions: {
-    upvote() {
-      alert("still working on the upvote functionality... chill ka leng...");
+    upvote(record) {
+      this.get('store').findRecord('mensahe', record.get('id')).then(function(mensahe) {
+        mensahe.set('upvotes', mensahe.get('upvotes') + 1);
+        mensahe.save();
+      });
     }
   }
 });
