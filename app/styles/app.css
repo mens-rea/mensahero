@@ -110,14 +110,19 @@ textarea {
     font-size: 14px;
   }
   textarea {
-    width: 300px !important;
-    height: 100px !important;
+    width: 280px !important;
+    height: 50px !important;
+    font-size: 14px;
   }
   .main-submit {
     background-color: #2885d7;
     color: white;
     margin-top: 15px;
     width: 360px;
+    font-size: 14px;
+  }
+  .feed {
+    margin-top: 5px;
   }
   p {
     font-size: 12px;
