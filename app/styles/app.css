@@ -34,6 +34,32 @@ textarea {
 .main-submit:hover {
   background-color: #3abeff;
 }
+
+.tabs {
+  list-style: none;
+  overflow: hidden;
+  padding-left: 0px;
+  padding-bottom: 5px;
+}
+.tabs li {
+  background-color: #f5f5f5;
+  padding: 5px 15px;
+  float: left;
+  margin-right: 15px;
+  cursor: pointer;
+  box-shadow: 2px 2px #888;
+}
+.tabs li.active {
+  background-color: #06840e;
+  color: white;
+  box-shadow: 0px 0px #888;
+}
+.tabs li:hover {
+  background-color: #45b04c;
+  color: white;
+  box-shadow: 0px 0px #888;
+}
+
 .feed {
   width: 725px;
   margin: 60px auto;

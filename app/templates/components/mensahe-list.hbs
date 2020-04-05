@@ -1,7 +1,17 @@
 <div class='feed'>
-  {{#each sortedMensaheList as |mensahe|}}
-    <div class='feed-item'>{{mensahe.body}} <div {{action "upvote" mensahe}} class="upvote-button" title="upvote"><i class="fas fa-sort-up"></i></div></div>
-  {{/each}}
+  <ul class="tabs">
+    <li class={{newestClass}} {{action "listNewest"}}>Newest</li>
+    <li class={{popularClass}} {{action "listPopular"}}>Popular</li>
+  </ul>
+  {{#if newestMensahe}}
+    {{#each newestMensaheList as |mensahe|}}
+      <div class='feed-item'>{{mensahe.body}} <div {{action "upvote" mensahe}} class="upvote-button" title="upvote"><i class="fas fa-sort-up"></i></div></div>
+    {{/each}}
+  {{else}}
+    {{#each popularMensaheList as |mensahe|}}
+      <div class='feed-item'>{{mensahe.body}} <div {{action "upvote" mensahe}} class="upvote-button" title="upvote"><i class="fas fa-sort-up"></i></div></div>
+    {{/each}}
+  {{/if}}
 </div>
 
 {{yield}}
