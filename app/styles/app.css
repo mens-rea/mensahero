@@ -62,3 +62,35 @@ textarea {
 }
 .upvote-button:hover{
   background-color: #45b04c;
+}
+
+@media screen and (max-width: 750px) {
+  .feed {
+    width: 500px;
+  }
+  textarea {
+    width: 400px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .feed {
+    width: 350px;
+  }
+  .feed-item {
+    font-size: 14px;
+  }
+  textarea {
+    width: 300px !important;
+    height: 100px !important;
+  }
+  .main-submit {
+    background-color: #2885d7;
+    color: white;
+    margin-top: 15px;
+    width: 360px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
