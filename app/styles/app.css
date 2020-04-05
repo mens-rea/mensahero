@@ -103,13 +103,18 @@ textarea {
 }
 
 @media screen and (max-width: 500px) {
+  .logo {
+    margin: 0px;
+    margin-top: 20px;
+  }
   .feed {
-    width: 350px;
+    width: 340px;
   }
   .feed-item {
     font-size: 14px;
   }
   textarea {
+    margin-top: 0px;
     width: 280px !important;
     height: 50px !important;
     font-size: 14px;
@@ -117,8 +122,8 @@ textarea {
   .main-submit {
     background-color: #2885d7;
     color: white;
-    margin-top: 15px;
-    width: 360px;
+    margin-top: 0px;
+    width: 340px;
     font-size: 14px;
   }
   .feed {
